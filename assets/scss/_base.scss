@@ -1,0 +1,95 @@
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0";
+
+$primary : #aa0601;
+$secondary: #650300;
+$white : #fbf2f2;
+$black : #000000;
+
+#gtx-trans {
+    display: none;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+img {
+	max-width:100%;
+	height: auto;
+	vertical-align:middle;
+}
+a {
+    text-decoration: none;
+}
+body, button{
+    font-family: Noto Sans TC, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.text-roboto {
+    font-family: Roboto, sans-serif;
+}
+@mixin pad{
+    @media(max-width:992px){
+    @content;
+    }
+}
+@mixin mobile{
+    @media(max-width:767px){
+    @content;
+    }
+}
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 0 12px;
+    @include pad{
+    padding: 0 36px;
+    }
+    @include mobile{
+    padding: 0 12px;
+    }
+}
+// flex
+.flex {
+  display: flex;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.ai-center {
+  align-items: center;
+}
+.ai-start {
+  align-self: start;
+}
+.flex-col {
+  flex-direction: column;
+}
+
+//字體
+.fz-14{
+  font-size: 14px;
+}
+.fz-18{
+  font-size: 18px;
+}
+.fz-20{
+  font-size: 20px;
+}
+.fz-32 {
+  font-size: 32px;
+}
+.fz-36 {
+  font-size: 36px;
+}
+.fz-42 {
+  font-size: 42px;
+}
+.fz-48 {
+  font-size: 48px;
+}
+.fz-64 {
+  font-size: 64px;
+}
+
